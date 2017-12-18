@@ -1,5 +1,11 @@
 {
   "name": "mergr",
   "version": "1.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "ava -v"
+  },
+  "dependencies": {
+    "ava": "^0.24.0"
+  }
 }
