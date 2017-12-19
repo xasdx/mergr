@@ -1,8 +1,12 @@
-let mergeObjects = (objects) => {
+let mergeObjects = (objects, overwrite) => {
   let result = cloneObject(objects[0])
   for (let i = 1; i < objects.length; i += 1) {
     iterateOwnProperties(objects[i], (property, object) => {
-      result[property] = object[property]
+      if (overwrite === false && result.hasOwnProperty(property)) {
+        /* do nothing */
+      } else {
+        result[property] = object[property]
+      }
     })
   }
   return result
