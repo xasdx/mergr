@@ -16,5 +16,5 @@ let objC = mergr([objA, objB]) // => { a: 0, b: "1" }
 
 // set the second parameter to false so the properties
 // will not get overwritten in the merging process
-merge([objC, { b: true, c: false }], false) // => { a: 0, b: "1", c: false }
+mergr([objC, { b: true, c: false }], false) // => { a: 0, b: "1", c: false }
 ```
