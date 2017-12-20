@@ -1,5 +1,7 @@
 # mergr
 
+[![Build Status](https://travis-ci.org/xasdx/mergr.svg?branch=master)](https://travis-ci.org/xasdx/mergr)
+
 > Simple package that merges objects
 
 ## Usage
